@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GlassTab",
+  "version": "1.0.0",
+  "description": "Minimalist glassmorphism new tab dashboard with customizable widgets, real-time system telemetry, and low memory footprint.",
+  "permissions": [
+    "downloads",
+    "downloads.open",
+    "system.memory",
+    "storage"
+  ],
+  "action": {
+    "default_title": "GlassTab"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
