@@ -1,11 +1,13 @@
 # GlassTab
 
-A lightweight, futuristic glassmorphism New Tab extension for Google Chrome. Built with pure Vanilla JS and CSS for zero background memory overhead and minimal battery consumption.
+A lightweight, futuristic glassmorphism New Tab extension and companion browser theme for Google Chrome. Built with pure Vanilla JS and CSS for zero background memory overhead and minimal battery consumption.
+
+![GlassTab Preview](./assets/preview.jpg)
 
 ## Features
 
 - **Free-Canvas Modular Widgets**: Place, resize, duplicate (`⧉`), and rename widgets (up to 20 characters) anywhere on the screen.
-- **Pinch-to-Move Safety Lock**: Widgets are locked during normal use. In Edit Mode (`⚙ EDIT`), hold or double-tap & hold the pinch/grab handle to move widgets without accidental drags.
+- **Pinch-to-Move Safety Lock**: Widgets are locked during normal use. In Edit Mode (`⚙ EDIT`), hold or double-tap & hold the grab handle to move widgets without accidental drags.
 - **Per-Widget Title Toggle**: Show or hide individual widget titles anytime in Edit Mode using the `T` button.
 - **Built-in Widgets**:
   - **System Telemetry**: Real-time physical RAM usage (`chrome.system.memory`), battery status, and network latency (Ping).
@@ -15,15 +17,21 @@ A lightweight, futuristic glassmorphism New Tab extension for Google Chrome. Bui
   - **Ping Monitor**: Real-time latency check (updates every 4 seconds) for any custom URL or local server.
 - **Multi-Engine & Voice Search**: Switch search engines on the fly or add custom query URLs. Includes Web Speech API voice input.
 - **42+ Google Apps Hover Launcher**: Hover over the top-right `⠿` icon to access over 42 native Google services with customizable Favorites.
-- **Persistent Storage & JSON Backup**: Notes, checklists, shortcuts, and layouts persist across PC reboots and can be exported/imported as JSON.
+- **Companion Browser Theme**: Includes `GlassTab Theme` in the `./theme` directory to match Chrome's tab bar and address bar with the dashboard.
 
 ## Installation (Developer Mode)
 
+### 1. GlassTab New Tab Extension
 1. Download or clone this repository to your computer.
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** using the toggle in the top-right corner.
-4. Click **Load unpacked** in the top-left corner and select the `glasstab` folder.
+4. Click **Load unpacked** in the top-left corner and select the root `glasstab` folder.
 5. Open a new tab (`Ctrl + T`).
+
+### 2. GlassTab Browser Theme (Optional)
+1. In `chrome://extensions/` (with Developer mode enabled), click **Load unpacked**.
+2. Select the `glasstab/theme` folder.
+3. To revert to Chrome's default theme at any time, go to `chrome://settings/appearance` and click **Reset to default**.
 
 ## License & Disclaimer
 
@@ -34,18 +42,25 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## 日本語概要 (Overview in Japanese)
 
-**GlassTab** は、近未来的なグラスモーフィズム（透明感）と超省メモリ・省バッテリー設計を両立した Google Chrome 用の新しいタブ拡張機能です。
+**GlassTab** は、近未来的なグラスモーフィズム（透明感）と超省メモリ・省バッテリー設計を両立した Google Chrome 用の新しいタブ拡張機能＆ブラウザテーマのセットです。
 
 ### 主な特徴
 - **自由配置＆サイズ変更可能なウィジェット**: `⚙ EDIT` モード中、各ウィジェットの「つまむ（ハンド）アイコン」を長押し（またはダブルタップ長押し）している間だけ自由に移動できます。
 - **タイトル編集＆表示切替**: ウィジェット名は最大20文字まで変更可能で、`T` ボタンでタイトルの表示・非表示を個別に切り替えられます。
 - **シャットダウンしても消えない永続保存**: メモ帳（Scratchpad）やチェックリスト（Checklist）、配置データは永続保存され、PCを再起動しても消えません（ダウンロード履歴のみセッション終了時にリセットされます）。
+- **専用ブラウザテーマ同梱**: タブバーやアドレスバーも統一できる `GlassTab Theme` を同梱しています。
 
 ### インストール方法
+
+#### 1. 新しいタブ拡張機能（本体）の導入
 1. このリポジトリをダウンロード（または `git clone`）します。
 2. Chrome で `chrome://extensions/` を開きます。
 3. 右上の **「デベロッパー モード」** をオンにします。
 4. 左上の **「パッケージ化されていない拡張機能を読み込む」** をクリックし、`glasstab` フォルダを選択します。
+
+#### 2. ブラウザテーマの導入（任意）
+1. 同じく `chrome://extensions/` の **「パッケージ化されていない拡張機能を読み込む」** をクリックし、`glasstab` フォルダ内の **`theme` フォルダ** を選択します。
+2. テーマをオフ（元のデザイン）に戻したい場合は、`chrome://settings/appearance`（設定 ＞ デザイン）を開き、「テーマ」の横にある **「デフォルトに戻す」** をクリックしてください。
 
 ### 免責事項・ライセンス
 本ソフトウェアは [MIT License](./LICENSE) の下で公開されており、無保証（自己責任）で提供されます。

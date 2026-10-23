@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "GlassTab Theme",
+  "version": "1.0.0",
+  "description": "Companion dark cyber-glass browser theme for GlassTab.",
+  "theme": {
+    "colors": {
+      "frame": [7, 11, 18],
+      "frame_inactive": [10, 15, 24],
+      "toolbar": [14, 23, 38],
+      "tab_text": [230, 243, 255],
+      "tab_background_text": [115, 140, 168],
+      "bookmark_text": [230, 243, 255],
+      "ntp_background": [7, 11, 18],
+      "ntp_text": [230, 243, 255],
+      "omnibox_background": [7, 11, 18],
+      "omnibox_text": [0, 229, 255]
+    }
+  }
+}
